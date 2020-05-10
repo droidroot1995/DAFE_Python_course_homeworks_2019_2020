@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 v0 = 5
 y0 = 10
 g = 9.81
-t = linspace(0, 1, 1001)
+t = linspace(0.0000001, 1, 1001)
 m = 3
 a = np.pi / 3
 x0 = 0

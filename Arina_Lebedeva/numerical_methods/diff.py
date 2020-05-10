@@ -10,8 +10,8 @@ def d_fun(x):
        h = 0.0000001
        return (fun(x+h)-fun(x-h))/(2*h)
 
-x0 = float(input())
-x1 = float(input())
+x0 = 0
+x1 = 1
 x = random.uniform(x0, x1)
 print (x)
 print (d_fun(x))

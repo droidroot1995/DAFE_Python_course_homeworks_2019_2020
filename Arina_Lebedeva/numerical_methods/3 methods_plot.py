@@ -1,8 +1,7 @@
 import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
-import random
-import pylab
+
 
 def fun(x):
        return x*x
@@ -33,15 +32,9 @@ def simpson_int(fun, a, b, n):
         return sum * dx / 3
 
 
-xlist = np.arange(-50, 10000, 0.2)
-ylist1 = [rectangle_int(fun, 1, x, 100) for x in xlist]
-ylist2 = [trapezoid_int(fun, 1, x, 100) for x in xlist]
-ylist3 = [simpson_int(fun, 1, x, 100) for x in xlist]
+x = np.arange(-10, 10, 0.2)
+y = fun(x)
 fig, axs = plt.subplots()
-plt.axis([-40, 40 , -1.5, 1.5])
-
-pylab.plot(xlist, ylist1)
-pylab.plot(xlist, ylist2)
-pylab.plot(xlist, ylist3)
-
+plt.axis([-10, 10, - 10, 10])
+plt.scatter(x, y)
 plt.show()

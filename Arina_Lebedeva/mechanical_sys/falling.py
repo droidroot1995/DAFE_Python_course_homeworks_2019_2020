@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 v0 = 5
 y0 = 10
 g = 9.81
-t = linspace(0, 1, 1001)
+t = linspace(0.000001, 1, 1001)
 m = 3
 
 y = (y0 + v0*t + 0.5*g*t**2) * (-1)
